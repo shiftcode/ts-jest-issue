@@ -4,7 +4,6 @@
  */
 
 export default {
-  extensionsToTreatAsEsm: ['.mts'],
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
