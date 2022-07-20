@@ -1,0 +1,23 @@
+{
+  "name": "esm-ts-jest",
+  "version": "1.0.0",
+  "description": "project to reproduce issues with ts-jest and mts files",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=16.13.0",
+    "npm": ">=8.1.2"
+  }
+}
