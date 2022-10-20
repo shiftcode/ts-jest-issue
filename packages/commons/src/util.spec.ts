@@ -1,4 +1,4 @@
-import {helpMe} from "./util.mjs";
+import {helpMe} from "./util.js";
 
 describe('util', () => {
 

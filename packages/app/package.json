@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "description": "project to reproduce issues with ts-jest and mts files",
-  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --no-cache",
-    "test:debug": "TS_JEST_LOG=ts-jest.log jest --no-cache",
+    "test:typecheck": "tsc --project tsconfig.jest.json --noemit",
+    "test:ts-jest": "jest --config jest.ts-jest.config.mjs --no-cache",
+    "test:swc": "jest --config jest.swc.config.mjs --no-cache",
     "build": "tsc"
   },
   "dependencies": {
