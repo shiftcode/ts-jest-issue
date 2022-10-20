@@ -1,0 +1,18 @@
+{
+  "name": "@lab/app",
+  "version": "0.0.0",
+  "private": true,
+  "description": "project to reproduce issues with ts-jest and mts files",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --no-cache",
+    "test:debug": "TS_JEST_LOG=ts-jest.log jest --no-cache",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@lab/commons": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}
