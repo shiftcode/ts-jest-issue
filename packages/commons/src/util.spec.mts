@@ -1,9 +1,10 @@
-import {helpMe} from "./util.mjs";
+import { multiply} from "./util.mjs";
 
 describe('util', () => {
 
-    test('should print something', () => {
-        helpMe()
+    test('should multiply', () => {
+        const result = multiply(2,3)
+        expect(result).toBe(6)
     })
 
 })

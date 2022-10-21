@@ -6,9 +6,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --no-cache",
-    "test:debug": "TS_JEST_LOG=ts-jest.log jest --no-cache",
-    "build": "tsc"
+    "test:ts-jest": "NODE_OPTIONS=--experimental-vm-modules jest --config jest.ts-jest.config.mjs --no-cache",
+    "test:swc": "jest --config jest.swc.config.mjs --no-cache",
+    "clean": "rm -rf dist dist-test tsconfig.tsbuildinfo",
+    "build": "npm run clean && tsc",
+    "build:test": "npm run clean && tsc --project tsconfig.jest.json"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,10 @@
     ".": {
       "types":  "./dist/_types/index.d.mts",
       "default": "./dist/index.mjs"
+    },
+    "./helpers": {
+      "types":  "./dist/_types/helpers/index.d.mts",
+      "default": "./dist/helpers/index.mjs"
     }
   }
 

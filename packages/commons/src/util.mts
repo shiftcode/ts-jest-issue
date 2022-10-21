@@ -1,3 +1,3 @@
-export function helpMe(){
-    console.log('sure I help you. What\'s the issue')
+export function multiply(one: number, two: number){
+    return one * two
 }

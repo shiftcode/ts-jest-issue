@@ -1,9 +1,7 @@
-import {help} from '@lab/commons'
-
 needHelp()
 
 export function needHelp(){
-    const helped = help()
+    const helped = 'helped my'
     console.log(helped)
     return helped
 }

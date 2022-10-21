@@ -6,5 +6,12 @@
     "outDir": "dist",
     "declarationDir": "dist/_types",
     "target": "es2021"
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "**/*.spec.mts",
+    "test/**/*.mts"
+  ]
 }

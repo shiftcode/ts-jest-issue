@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "",
+    "declaration": false,
+    "declarationDir": null,
+    "declarationMap": false,
+    "allowJs": true,
+    "outDir": "dist-test"
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.spec.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": []
+}
