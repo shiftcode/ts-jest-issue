@@ -7,7 +7,7 @@ export default {
     extensionsToTreatAsEsm: ['.mts'],
     moduleNameMapper: {
         '^(\\.{1,2}/.*)\\.js$': '$1',
-        '@lab/commons/helper': '<rootDir>/../commons/dist/helpers/index.mjs',
+        // '@lab/commons/helper': '<rootDir>/../commons/dist/helpers/index.mjs',
     },
     // A path to a custom resolver
     // resolver: '<rootDir>/../../mjs-resolver.cjs',
