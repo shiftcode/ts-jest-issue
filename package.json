@@ -2,9 +2,9 @@
   "name": "ts-jest-issue",
   "scripts": {
     "clean": "npm run clean --workspaces",
-    "test:ts-jest": "npm run clean && npm run test:ts-jest --workspaces",
+    "test:ts-jest": "npm run clean && npm run build --workspace=@lab/commons && npm run test:ts-jest --workspaces",
     "test:tsc-and-jest": "npm run clean && npm run build --workspace=@lab/commons && npm run build:test --workspace=@lab/app && npm run test:plain --workspace=@lab/app",
-    "test:swc": "npm run clean && npm run build --workspaces && npm run test:swc --workspaces"
+    "test:swc": "npm run clean && npm run build --workspace=@lab/commons && npm run test:swc --workspaces"
   },
   "workspaces": [
     "packages/commons",

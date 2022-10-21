@@ -1,4 +1,4 @@
-import { multiply} from "./util.mjs";
+import { multiply} from "./util.js";
 
 describe('util', () => {
 

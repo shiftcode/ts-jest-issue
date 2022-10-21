@@ -1,4 +1,4 @@
-import {needHelp} from "./main.mjs"
+import {needHelp} from "./main.js"
 import {promisify} from 'node:util'
 import {nodeMaxHeaderSize} from '@lab/commons/helpers'
 

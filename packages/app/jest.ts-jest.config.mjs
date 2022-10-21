@@ -4,20 +4,19 @@
  */
 
 export default {
-    extensionsToTreatAsEsm: ['.mts'],
     moduleNameMapper: {
         '^(\\.{1,2}/.*)\\.js$': '$1',
-        '@lab/commons/helper': '<rootDir>/../commons/dist/helpers/index.mjs',
+        // this did not help
+        // '^@lab/commons/helpers':'../commons/dist/helpers/index.js'
     },
-    // A path to a custom resolver
-    // resolver: '<rootDir>/../../mjs-resolver.cjs',
+    extensionsToTreatAsEsm: ['.ts'],
     // The glob patterns Jest uses to detect test files
     testMatch: [
-        '**/__tests__/**/*.m[jt]s?(x)',
-        '**/?(*.)+(spec|test).m[tj]s?(x)',
+        '**/__tests__/**/*.ts',
+        '**/?(*.)+(spec|test).ts',
     ],
     transform: {
-        "^.+\\.mts$": [
+        "^.+\\.ts": [
             'ts-jest',
             {
                 tsconfig: './tsconfig.jest.json',
@@ -41,6 +40,5 @@ export default {
         'tsx',
         'json',
         'node',
-    ],
-    verbose: true
+    ]
 }

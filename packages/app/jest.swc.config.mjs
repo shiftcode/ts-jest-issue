@@ -3,7 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 export default {
-    extensionsToTreatAsEsm: ['.mts'],
+    extensionsToTreatAsEsm: ['.ts'],
     moduleFileExtensions: [
         'js',
         'mjs',
@@ -20,13 +20,13 @@ export default {
     // resolver: '<rootDir>/../../mjs-resolver.cjs',
     // The glob patterns Jest uses to detect test files
     testMatch: [
-        '**/src/__tests__/**/*.m[jt]s?(x)',
-        '**/src/?(*.)+(spec|test).m[tj]s?(x)',
+        '**/src/__tests__/**/*.ts',
+        '**/src/?(*.)+(spec|test).ts',
     ],
     moduleNameMapper: {
-        '^(\\.{1,2}/.*)\\.mjs$': '$1',
+        '^(\\.{1,2}/.*)\\.js$': '$1',
     },
     transform: {
-        "^.+\\.m(t|j)sx?$": ["@swc/jest"],
+        "^.+\\.ts$": ["@swc/jest"],
     },
 }
